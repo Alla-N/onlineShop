@@ -1,0 +1,467 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+
+/*------------------header-----------------------------------*/
+
+/*header{
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+}*/
+.topTopMenu{
+	background-color: #424242;
+	padding: 10px;
+
+}
+
+.topLinks {
+	display: flex;
+	justify-content: flex-end;
+}
+.topLinks a{
+	text-decoration: none;
+	color:#d5d5d4;
+}
+.topLinks li{
+	list-style: none;
+	margin: 0 27px;
+	font-size: 19px;
+	font-family: 'Segoe UI Symbol' san-serif;
+}
+.topMenu{
+	background-image: linear-gradient(to bottom, white, #CAFAF4);
+	display: flex;
+	flex-direction:row;
+	flex-wrap: wrap;
+	justify-content:space-between;
+	align-items: center;
+	overflow: hidden;
+}
+
+.search{
+	border: 2px solid #7bb562;
+	min-height: 25px;
+	outline: none;
+	width:100%;
+	box-sizing: border-box;
+	display: flex;
+	justify-content: space-between;
+}
+
+#searchField{
+	border: none;
+	outline: none;
+	vertical-align: middle;
+	background-color: transparent;
+	margin: 0; 
+	height: 26px;
+	width:70%;
+	font-size: 18px;
+	color:green;
+
+}
+#searchButton{
+	border: none;
+	outline: none;
+	vertical-align: middle;
+	margin: 0; 
+	background-color: #7bb562;
+	height: 26px;
+	width: 30%;
+	color: white;
+	font-size: 18px;
+	font-family: 'Myriad Pro', san-serif;
+
+}
+#buttonHurt{
+	margin: 0 40px 0 20px;
+}
+
+div + nav{
+	border-bottom: 1px solid black;
+	border-top: 1px solid black;
+}
+
+.navigation{
+	display: flex;
+	flex-direction:row;
+	flex-wrap: wrap;
+	justify-content:space-around;
+	align-items: center;
+	list-style: none;
+	font-size: 19px;
+	font-family: 'Segoe UI Symbol' san-serif;
+	
+}
+.navigation a{
+	text-decoration: none;
+	color:#5b5b5b;
+	padding: 0 15px;
+
+}
+.navigation a:hover{
+	background-image:linear-gradient(to bottom, #92d673, #7bb562);
+	color: white;
+
+}
+
+
+/*----------------main-------------------------*/
+
+.flexContainer{
+	display: flex;
+	flex-direction:row;
+	flex-wrap: wrap;
+	justify-content:center;
+	align-items: center;
+	align-content: space-around;
+
+}
+.flexItemsLeft{
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	width:60%;
+	background-image: url(img/banner-back.png);
+	background-repeat: round;
+	margin: 20px;
+	padding: 14px;
+	height: 360px;
+}
+.flexItemsLeft img{
+	margin: 40px 10px;
+}
+.descriptionBook{
+	align-self: center;
+}
+.descriptionBook h1{
+	color: white;
+	font-size: 47px;
+	font-family: 'Myriad Pro', san-serif;
+	text-align: center;
+}
+.descriptionBook h2{
+	color: white;
+	font-size: 25px;
+	font-family: 'Myriad Pro', san-serif;
+	text-align: center;
+}
+.descriptionBook h3{
+	color: white;
+	font-size: 21px;
+	font-family: 'Myriad Pro', san-serif;
+	text-align: center;
+}
+.flexItemsRight{
+	width:30%;
+	background-color: #6c6c6c; 
+	margin: 20px;
+	padding: 14px;
+	height: 360px;
+}
+.banner{
+	align-self: center;
+	padding: 10px;
+}
+.banner h1{
+	color: white;
+	font-size: 27px;
+	font-family: 'Myriad Pro', san-serif;
+	text-align: center;
+}
+.banner h2{
+	color: white;
+	font-size: 21px;
+	font-family: 'Myriad Pro', san-serif;
+	text-align: center;
+}
+.banner h3{
+	color: white;
+	font-size: 27px;
+	font-family: 'Myriad Pro', san-serif;
+	text-align: center;
+}
+.banner h4{
+	color: white;
+	font-size: 21px;
+	font-family: 'Myriad Pro', san-serif;
+	text-align: center;
+}
+.banner p{
+	text-align:center;
+	margin: 10px 0
+}
+.banner input{
+	background-color: #5cba5c;
+	color: white;
+	border: none;
+	outline: none;
+	vertical-align: middle;
+	font-size: 19px;
+	padding: 5px;
+	border-radius: 5px;
+}
+
+
+
+
+/*------------------left side-------------------------------*/
+
+.center{
+	display: flex;
+	flex-direction:row;
+	flex-wrap: wrap;
+	justify-content:space-around;
+	padding : 15px;
+}
+
+.rightSide{
+	width: 70%;
+	padding : 10px 30px;
+	border: 1px solid grey;
+}
+
+
+.leftSide{
+	width: 20%;
+	padding : 10px 30px;
+	border: 1px solid grey;
+}
+.leftSide a{
+	display: block;
+	text-decoration: none;
+	color:grey;
+}
+.leftSide li{
+	list-style: none;
+	font-size: 15px;
+	font-family: 'Segoe UI Symbol' san-serif;
+	font-weight: bolder;
+	padding: 5px 0;
+}
+
+.leftSide a:hover{
+	background-image:linear-gradient(to bottom, #92d673, #7bb562);
+	color: white;
+
+}
+.leftSide h1{
+	font-size: 24px;
+}
+div.leftSide > h2 > a{
+	font-size: 17px;
+	text-transform: uppercase;
+	color:black;
+	font-weight: bolder;
+}
+
+.categoryList li{
+	border-top: 0.4px solid grey;
+}
+
+/*---------------books--------------------------------------*/
+
+.flexContainerBooks{
+	display: flex;
+	flex-direction:row;
+	flex-wrap: wrap;
+	justify-content:space-around;
+	
+}
+
+.flexItemsBooks  p{
+	text-align:center;
+}
+.flexItemsBooks  {
+	width: 20%;
+	margin: 20px auto;
+}
+
+
+
+/*-------------------footer---------------------------------*/
+footer{
+	background-color: #464644;
+}
+footer > div > p{
+	background-color: #30332c;
+	text-align: center;
+	font-size: 16px;
+	color:#d5d5d4;
+	font-family: 'Myriad Pro';
+	padding: 10px;
+
+}
+.footerMenu{
+	display: flex;
+	flex-direction:row;
+	flex-wrap: wrap;
+	justify-content:space-around;
+	padding : 15px;
+}
+
+.footerLinks{
+	width: 25%;
+	padding: 10px 20px;
+}
+
+.footerLinks ul{
+	list-style: none;
+}
+
+.footerLinks > ul > li{
+
+	border-bottom: 0.4px solid grey;
+	padding: 5px 0;
+	font-size: 13px;
+}
+.footerLinks > ul > li > a {
+	display: block;
+	height: auto;
+	text-decoration: none;
+    text-align: left;
+    color:#d5d5d4;
+}
+.footerLinks > ul > li:first-child {
+
+    font-size: 19px;
+}
+.footerLinks > ul > li > a:hover {
+	background-image:linear-gradient(to bottom, #92d673, #7bb562);
+	color: white;
+}
+
+
+
+/**/
+/**/
+
+/*Смена стиля для маленьких экранов*/
+
+@media only screen and (max-width: 400px) {
+  .topLinks {
+  	display: flex;
+    flex-direction:column;
+    align-items: center;
+  }
+  .topMenu{
+	flex-direction:column;
+}
+  .navigation {
+  	display: flex;
+    flex-direction:column;
+    align-items: center;
+  }
+  .logo{
+  	zoom:50%;
+  }
+  #buttonCheck{
+  	zoom:70%;
+	float: left;
+  }
+  #buttonHurt{
+  	zoom:70%;
+  	margin: 0 10px;
+  }
+.buttons{
+	width: 100%;
+	display: flex;
+	justify-content: space-around;
+}
+.flexItemsLeft{
+	display: none;
+}
+.flexItemsRight{
+	display: none;
+}	
+.flexItemsBooks {
+	width: 100%;
+}
+.footerMenu{
+	display: none;
+}
+}
+
+
+
+/*--------------------------------------*/
+
+@media only screen and (max-width: 500px){
+
+.flexItemsBooks  {
+	width: 50%;
+}
+.rightSide{
+	width: 60%;
+}
+
+.leftSide{
+	width: 30%;
+}
+}
+
+
+
+
+
+
+/*-------------------------------------*/
+
+@media only screen and (max-width: 700px){
+
+.rightSide{
+	width: 60%;
+}
+
+.leftSide{
+	width: 30%;
+}
+.flexItemsBooks  {
+	width: 33.33%;
+}
+}
+
+
+/*Смена стиля для средних экранов*/
+@media only screen and (max-width: 850px){
+.topLinks li{
+	font-size: 15px;
+}
+
+.navigation {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+  }
+  .logo{
+  	zoom:70%;
+  }
+  #buttonCheck{
+  	zoom:80%;
+  }
+  #buttonHurt{
+  	zoom:80%;
+  }
+  .flexItemsLeft{
+	width:100%;
+	margin: 0;
+}
+.flexItemsRight{
+	width:100%;
+	margin: 0;
+}
+.flexItemsBooks  {
+	width: 25%;
+}
+.footerLinks{
+	width: 50%;
+}
+}
+
+
+
