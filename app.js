@@ -79,6 +79,3 @@ for(var i=0; i< addToCartButtons.length; i++){
 }
 
 
-
-
-
