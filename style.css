@@ -5,14 +5,22 @@
     
 }
 
-/*------------------header-----------------------------------*/
+a{
+	display: block;
+}
 
-/*header{
+/*------------------header-----------------------------------*/
+header{
+	height: 160px;
+}
+
+ .header{
 	position: fixed;
 	top: 0;
 	left: 0;
 	right: 0;
-}*/
+	z-index: 20;
+} 
 .topTopMenu{
 	background-color: #424242;
 	padding: 10px;
@@ -24,23 +32,35 @@
 	justify-content: flex-end;
 }
 .topLinks a{
+	display: block;
 	text-decoration: none;
 	color:#d5d5d4;
 }
+.topLinks a:hover{
+	color:#90d472;
+	transform: scale(1.2);
+}
 .topLinks li{
 	list-style: none;
-	margin: 0 27px;
+	padding: 0 27px;
 	font-size: 19px;
-	font-family: 'Segoe UI Symbol' san-serif;
 }
 .topMenu{
 	background-image: linear-gradient(to bottom, white, #CAFAF4);
 	display: flex;
 	flex-direction:row;
 	flex-wrap: wrap;
-	justify-content:space-between;
+	justify-content:space-around;
 	align-items: center;
 	overflow: hidden;
+}
+.logo{
+	height: 85px;
+}
+.logo:hover{
+	transition: all 0.5s ease;
+	transform: scale(0.8);
+	cursor: pointer;
 }
 
 .search{
@@ -59,6 +79,7 @@
 	vertical-align: middle;
 	background-color: transparent;
 	margin: 0; 
+	padding: 2px 5px;
 	height: 26px;
 	width:70%;
 	font-size: 18px;
@@ -70,21 +91,103 @@
 	outline: none;
 	vertical-align: middle;
 	margin: 0; 
-	background-color: #7bb562;
+	background-color: transparent;
 	height: 26px;
 	width: 30%;
-	color: white;
+	color: #7bb562;
 	font-size: 18px;
 	font-family: 'Myriad Pro', san-serif;
+	cursor: pointer;
+	border-left: 2px solid #7bb562;
+
 
 }
-#buttonHurt{
+
+#searchButton:hover{
+	color:black;
+	
+}
+
+.buttons{
+	display: flex;
+}
+.button1, .button2{
+	position: relative;
+	width: 50%;
+}
+
+ .button2{
+	padding: 5px;
+}
+
+#checkNumber{
+	display: none;
+	position: absolute;
+	top:-5px;
+	left:25px;
+	width: 25px;
+	height: 25px;
+	line-height: 25px;
+	color: black;
+	font-size: 15px;
+	font-weight: bolder;
+	border: 1px solid gray;
+	border-radius: 50%;
+	background-color: white;
+	text-align: center;
+	vertical-align: middle;
+	z-index: 2;
+}
+
+#likeNumber{
+	display: none;
+	position: absolute;
+	top:-5px;
+	left:45px;
+	width: 25px;
+	height: 25px;
+	line-height: 25px;
+	color: black;
+	font-size: 15px;
+	font-weight: bolder;
+	border: 1px solid gray;
+	border-radius: 50%;
+	background-color: white;
+	text-align: center;
+	vertical-align: middle;
+	z-index: 2;
+}
+
+#buttonCheck{
+	  opacity: 0.7;
+	  transition: all 0.5s ease;
+}
+#buttonLike{
 	margin: 0 40px 0 20px;
+	opacity: 0.7;
+	transition: all 0.5s ease;
+	width: 40px;
+	height: 40px;
 }
 
-div + nav{
+#buttonCheck:hover{
+	  opacity: 1;
+	  transform: scale(1.2);
+}
+#buttonLike:hover{
+	opacity: 1;
+	transform: scale(1.2);
+
+}
+
+.navDiv, .topMenu{
 	border-bottom: 1px solid black;
-	border-top: 1px solid black;
+
+}
+
+.navDiv{
+	background-color: white;
+
 }
 
 .navigation{
@@ -95,7 +198,7 @@ div + nav{
 	align-items: center;
 	list-style: none;
 	font-size: 19px;
-	font-family: 'Segoe UI Symbol' san-serif;
+	
 	
 }
 .navigation a{
@@ -113,105 +216,64 @@ div + nav{
 
 /*----------------main-------------------------*/
 
-.flexContainer{
-	display: flex;
-	flex-direction:row;
-	flex-wrap: wrap;
-	justify-content:center;
-	align-items: center;
-	align-content: space-around;
+.sliderContainer{
+	height: 360px;
+	padding: 20px;
 
 }
-.flexItemsLeft{
-	display: flex;
-	flex-direction: row;
-	justify-content: space-around;
-	width:60%;
+.slider{
+	width: 80%;
+	height: 320px;
 	background-image: url(img/banner-back.png);
-	background-repeat: round;
-	margin: 20px;
-	padding: 14px;
-	height: 360px;
+	background-repeat: no-repeat;
+	background-size: cover;
+	margin: 0 auto;
+
 }
-.flexItemsLeft img{
-	margin: 40px 10px;
+
+.slider>div{
+	height: 320px;
 }
-.descriptionBook{
-	align-self: center;
+
+.sliderDiv {
+	height: 100%;
+	width: 100%;
+	padding: 45px;
 }
-.descriptionBook h1{
+
+.sliderDiv>img {
+	float: left;
+}
+
+.sliderDiv h1{
 	color: white;
 	font-size: 47px;
 	font-family: 'Myriad Pro', san-serif;
 	text-align: center;
+	margin-top: 35px;
 }
-.descriptionBook h2{
+.sliderDiv h2{
 	color: white;
 	font-size: 25px;
 	font-family: 'Myriad Pro', san-serif;
 	text-align: center;
 }
-.descriptionBook h3{
+.sliderDiv h3{
 	color: white;
 	font-size: 21px;
 	font-family: 'Myriad Pro', san-serif;
 	text-align: center;
 }
-.flexItemsRight{
-	width:30%;
-	background-color: #6c6c6c; 
-	margin: 20px;
-	padding: 14px;
-	height: 360px;
-}
-.banner{
-	align-self: center;
-	padding: 10px;
-}
-.banner h1{
-	color: white;
-	font-size: 27px;
-	font-family: 'Myriad Pro', san-serif;
-	text-align: center;
-}
-.banner h2{
-	color: white;
-	font-size: 21px;
-	font-family: 'Myriad Pro', san-serif;
-	text-align: center;
-}
-.banner h3{
-	color: white;
-	font-size: 27px;
-	font-family: 'Myriad Pro', san-serif;
-	text-align: center;
-}
-.banner h4{
-	color: white;
-	font-size: 21px;
-	font-family: 'Myriad Pro', san-serif;
-	text-align: center;
-}
-.banner p{
-	text-align:center;
-	margin: 10px 0
-}
-.banner input{
-	background-color: #5cba5c;
-	color: white;
-	border: none;
-	outline: none;
-	vertical-align: middle;
-	font-size: 19px;
-	padding: 5px;
-	border-radius: 5px;
-}
+
 
 
 
 
 /*------------------left side-------------------------------*/
 
+ #leftSideHide{
+	display: none;
+} 
 .center{
 	display: flex;
 	flex-direction:row;
@@ -220,27 +282,30 @@ div + nav{
 	padding : 15px;
 }
 
-.rightSide{
-	width: 70%;
-	padding : 10px 30px;
-	border: 1px solid grey;
-}
 
 
 .leftSide{
-	width: 20%;
+	width: 25%;
+	
+}
+
+.leftSide>div{
 	padding : 10px 30px;
 	border: 1px solid grey;
+	border-radius: 10px;
+	
 }
+
+
 .leftSide a{
 	display: block;
 	text-decoration: none;
 	color:grey;
+	display: block;
 }
 .leftSide li{
 	list-style: none;
 	font-size: 15px;
-	font-family: 'Segoe UI Symbol' san-serif;
 	font-weight: bolder;
 	padding: 5px 0;
 }
@@ -264,28 +329,164 @@ div.leftSide > h2 > a{
 	border-top: 0.4px solid grey;
 }
 
-/*---------------books--------------------------------------*/
+.section{
+	display: inline;
+	border:1px solid grey;
+}
 
-.flexContainerBooks{
-	display: flex;
-	flex-direction:row;
-	flex-wrap: wrap;
-	justify-content:space-around;
+/* ----------right side---------------------------------------- */
+
+.rightSide{
+	width: 70%;	
 	
 }
 
-.flexItemsBooks  p{
-	text-align:center;
-}
-.flexItemsBooks  {
-	width: 20%;
-	margin: 20px auto;
+.rightSide > div, .rightSide > input { 
+  display: none; 
 }
 
+.rightSide label { 
+  padding: 10px 25px; 
+  border: 1px solid grey; 
+  height: 60px;
+  line-height: 50px;
+  vertical-align: middle;
+  text-align: center;
+  background-color: #CAFAF4;
+  margin: 0 -6px -6px 0;
+  cursor: pointer; 
+  position: relative; 
+  bottom: 0px; 
+  background: #CAFAF4;
+  font-size: 18px;
+}
+
+.rightSide  > label[for="vkl3"] { 
+  border-top-right-radius: 10px;
+}
+
+.rightSide  > label:hover{
+color:green;
+
+}
+
+.rightSide input[type="radio"]:checked + label { 
+
+  background-color: white;
+  border-bottom:2px solid white;
+}
+
+.rightSide > input:nth-of-type(1):checked ~ div:nth-of-type(1),
+.rightSide > input:nth-of-type(2):checked ~ div:nth-of-type(2),
+.rightSide > input:nth-of-type(3):checked ~ div:nth-of-type(3) { 
+  display: grid; 
+  margin-top: -6px;
+  
+}
+
+
+
+
+
+/*-------------books grid-------------*/
+
+.gridContainerBooks{
+	display: grid;
+	grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+	grid-gap: 5px 5px;
+	border: 1px solid grey;
+	padding : 30px;
+}
+
+.gridItemsBooks  p{
+	text-align:center;
+}
+
+.items{
+	position: relative;
+	width: 145px;
+	height: 300px;
+	margin: 0 auto;
+	text-align: center;
+	padding: 10px;
+}
+
+.items p{
+	padding: 5px;
+	color: grey;
+}
+
+.items img{
+	width: 125px;
+	height: 170px;
+}
+
+p.price{
+	font-size: 22px;
+	color:red;
+}
+
+.add-to-cart{
+	width: 40px;
+	height: 40px;
+	line-height: 40px;
+	vertical-align: middle;
+	text-align: center;
+	text-transform: uppercase;
+	font-size: 12px;
+	color: #5cba5c;
+	cursor: pointer;
+
+	border: 1px solid #5cba5c;
+	border-radius: 50%;
+	outline: none;
+	box-shadow: none;
+
+	position: absolute;
+	top: 50px;
+	right: -5px;
+
+
+}
+
+.add-to-cart:hover{
+	transform: scale(1.2);
+	font-weight: bolder;
+	border-width: 2px;
+}
+
+.addLike{
+	position: absolute;
+	top: -5px;
+	right: -5px;
+
+	width: 30px;
+	height: 30px;
+
+	background: url(img/like4.png);
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: 15px;
+	border: none;
+
+	cursor: pointer;
+}
+
+.addLike:hover{
+	transform: scale(1.4);
+}
+
+.liked{
+	background: url(img/like3.png);
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: 20px;
+	border: none;
+}
 
 
 /*-------------------footer---------------------------------*/
-footer{
+.footerMenu{
 	background-color: #464644;
 }
 footer > div > p{
@@ -341,123 +542,68 @@ footer > div > p{
 /**/
 /**/
 
-/*Смена стиля для маленьких экранов*/
 
-@media only screen and (max-width: 400px) {
-  .topLinks {
-  	display: flex;
-    flex-direction:column;
-    align-items: center;
-  }
-  .topMenu{
-	flex-direction:column;
+
+
+/*------Смена стиля для маленьких экранов-----------*/
+
+@media only screen and (max-width: 650px){
+
+.center{
+	position: relative;
 }
-  .navigation {
-  	display: flex;
-    flex-direction:column;
-    align-items: center;
-  }
-  .logo{
-  	zoom:50%;
-  }
-  #buttonCheck{
-  	zoom:70%;
-	float: left;
-  }
-  #buttonHurt{
-  	zoom:70%;
-  	margin: 0 10px;
-  }
-.buttons{
+
+ .rightSide{
 	width: 100%;
-	display: flex;
-	justify-content: space-around;
-}
-.flexItemsLeft{
+} 
+ 
+  
+.leftSide>div{
 	display: none;
 }
-.flexItemsRight{
-	display: none;
-}	
-.flexItemsBooks {
-	width: 100%;
-}
-.footerMenu{
-	display: none;
-}
+
+.rightSide label{
+	padding: 10px;
 }
 
-
-
-/*--------------------------------------*/
-
-@media only screen and (max-width: 500px){
-
-.flexItemsBooks  {
-	width: 50%;
-}
-.rightSide{
-	width: 60%;
+.sliderDiv>img{
+	float:none;
+	transform: scale(0.6);
+	margin-bottom: -30px;
 }
 
-.leftSide{
-	width: 30%;
-}
-}
-
-
-
-
-
-
-/*-------------------------------------*/
-
-@media only screen and (max-width: 700px){
-
-.rightSide{
-	width: 60%;
+ .sliderDiv>h1, .sliderDiv>h2, .sliderDiv>h3{
+	transform: scale(0.6);
+	margin: 0;
+	font-size: 28px;
+	vertical-align: top;
 }
 
-.leftSide{
-	width: 30%;
+.sliderDiv{
+	padding: 10px;
 }
-.flexItemsBooks  {
-	width: 33.33%;
-}
+
 }
 
 
 /*Смена стиля для средних экранов*/
-@media only screen and (max-width: 850px){
+
+@media only screen and (max-width: 991px){
 .topLinks li{
 	font-size: 15px;
 }
 
-.navigation {
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-  }
+
   .logo{
   	zoom:70%;
   }
   #buttonCheck{
   	zoom:80%;
   }
-  #buttonHurt{
+  #buttonLike{
   	zoom:80%;
   }
-  .flexItemsLeft{
-	width:100%;
-	margin: 0;
-}
-.flexItemsRight{
-	width:100%;
-	margin: 0;
-}
-.flexItemsBooks  {
-	width: 25%;
-}
+
 .footerLinks{
 	width: 50%;
 }

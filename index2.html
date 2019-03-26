@@ -3,51 +3,63 @@
 <head>
 	<meta charset="UTF-8">
 	<title>Shop</title>
-	<link rel="stylesheet" href="style.css">
+	<link type="text/css" rel="stylesheet" href="style.css"> 
+	<link rel="stylesheet" type="text/css" href="slick-1.8.1/slick/slick.css"/>
+	<link rel="stylesheet" type="text/css" href="slick-1.8.1/slick/slick-theme.css"/>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
 <body>
 	<header>
-		<div class="topTopMenu">
+		<div class="header">
+			<div class="topTopMenu">
 			
-			<nav>
+				<nav>
 
-				<ul class="topLinks">
-					<li>
-						<a href="">Sign in</a>
-					</li>
-					<li>
-						<a href="">My Account</a>
-						
-					</li>
-					<li>
-						<a href="">Order Status</a>
-					</li>
-					<li>
-						<a href="">Help</a>
-					</li>
-				</ul>
-			</nav>
-		</div>
+					<ul class="topLinks">
+						<li>
+							<a href="">Sign in</a>
+						</li>
+						<li>
+							<a href="">My Account</a>
+							
+						</li>
+						<li>
+							<a href="">Order Status</a>
+						</li>
+						<li>
+							<a href="">Help</a>
+						</li>
+					</ul>
+				</nav>
+			</div>
 		
-		<div class="topMenu">
-			<div class="logo">
-				<img src="img/logo.png" alt="">
+			<div class="topMenu">
+				<div class="logo">
+					<img src="img/logo.png" alt="">
+				</div>
+				<div class="searchDiv">
+					<form  class="search" action="">
+						<input id="searchField" type="search"/>
+						<input id="searchButton" type="submit" value="Search" >
+					</form>
+				</div>
+				<div class="buttons">
+					<div class="button1">
+						<p id="checkNumber"></p>
+						<input id="buttonCheck" type="image" src="img/box.png">
+					</div>
+					<div class="button2">
+						<p id="likeNumber"></p>
+						<input id="buttonLike" type="image" src="img/like1-1.png">
+					</div>
+					
+					
+				</div>
 			</div>
-			<div>
-				<form  class="search" action="">
-					<input id="searchField" type="search"/>
-					<input id="searchButton" type="submit" value="Search" >
-				</form>
-			</div>
-			<div class="buttons">
-				<input id="buttonCheck" type="image" src="img/box.png">
-				<input id="buttonHurt" type="image" src="img/like.png">
-				
-			</div>
-		</div>
 		
-		<nav>
-			<ul class="navigation">
+		<div class="navDiv">
+			<nav>
+				<ul class="navigation">
 				<li>
 					<a href="">Computers</a>
 				</li>
@@ -76,240 +88,643 @@
 					<a href="">Science</a>
 				</li>
 			</ul>
-		</nav>
+			</nav>
+			
+		</div>
+		</div>
+			
 
 	</header>
 	<main>
 	
-		<div class="flexContainer" >
-			<div class="flexItemsLeft">
-				<img src="img/book1.png" alt="">
-				<div class="descriptionBook">
-					<h1>
-						A Wanted Man
-					</h1>
-					<h2>
-						(Jack Reacher #17)
-					</h2>
-					<h3>
-						By Lee Child
-					</h3>
+		<div class="sliderContainer" >
+			<div class="slider">
+				<div>
+					<div class="sliderDiv">
+						<img src="img/book1.png" alt="">
+						<h1>
+							A Wanted Man slide 1
+						</h1>
+						<h2>
+							(Jack Reacher)
+						</h2>
+						<h3>
+							By Lee Child
+						</h3>
+					</div>		
 				</div>
-			</div>
-			<div class="flexItemsRight">
-				<div class="banner">
-					<h1>
-						Deal of the Month
-					</h1>
-					<h2>
-						The human face of big data
-					</h2>
-					<p><img src="img/banner.png" alt=""></p>
-					<h3>
-						Save 45 % today
-					</h3>
-					<h4>
-						$ 27.50
-					</h4>
-					<p><input type="button" value="Buy now"></p>
+				<div>
+					<div class="sliderDiv">
+						<img src="img/book1.png" alt="">
+						<h1>
+							A Wanted Man slide 2
+						</h1>
+						<h2>
+							(Jack Reacher)
+						</h2>
+						<h3>
+							By Lee Child
+						</h3>
+					</div>		
 				</div>
+				<div>
+					<div class="sliderDiv">
+						<img src="img/book1.png" alt="">
+						<h1>
+							A Wanted Man slide 3
+						</h1>
+						<h2>
+							(Jack Reacher)
+						</h2>
+						<h3>
+							By Lee Child
+						</h3>
+					</div>		
+				</div>
+				
 			</div>
+
 		</div>
 		<div class="center">
-	
+
 			<div class="leftSide">
-				<h1>
-						Categories
-				</h1>
-				<h2><a href="">All</a></h2>
 				
-				<ul>
+				<div>
+					<h1>
+						Categories
+					</h1>
+					<h2><a href="">All</a></h2>
+					
 					<ul>
-						<li>
-							Fiction & Literature
-						</li>
-							<ul class="categoryList">
-								<li>
-									<a href="">Children</a>
-								</li>
-								<li>
-									<a href="">Science Fiction</a>
-								</li>
-								<li>
-									<a href="">Fantasy</a>
-								</li>
-								<li>
-									<a href="">Mistery</a>
-								</li>
-								<li>
-									<a href="">Romance</a>
-								</li>
-								<li>
-									<a href="">Horror</a>
-								</li>
-								<li>
-									<a href="">Poetry</a>
-								</li>
-								<li>
-									<a href="">Literature</a>
-								</li>
-								<li>
-									<a href="">Crime </a>
-								</li>	
-							</ul>
-						<li>
-							Non-Fiction
-						</li>
-							<ul class="categoryList">
-								<li>
-									<a href="">Comic</a>
-								</li>
-								<li>
-									<a href="">Cook</a>
-								</li>
-								<li>
-									<a href="">Psychology</a>
-								</li>
-								<li>
-									<a href="">Medical</a>
-								</li>
-								<li>
-									<a href="">Art</a>
-								</li>
-								<li>
-									<a href="">Photography</a>
-								</li>
-								<li>
-									<a href="">Law</a>
-								</li>
-								<li>
-									<a href="">History</a>
-								</li>
-								<li>
-									<a href="">Business</a>
-								</li>
-								<li>
-									<a href="">Computer</a>
-								</li>
-								<li>
-									<a href="">Comic</a>
-								</li>
-								<li>
-									<a href="">Cook</a>
-								</li>
-								<li>
-									<a href="">Psychology</a>
-								</li>
-								<li>
-									<a href="">Medical</a>
-								</li>
-							</ul>
-						<li>
-							Other
-						</li>
-							<ul class="categoryList">
-								<li>
-									<a href="">Baby</a>
-								</li>
-								<li>
-									<a href="">Sex</a>
-								</li>
-								<li>
-									<a href="">Travel</a>
-								</li>
-								<li>
-									<a href="">Science</a>
-								</li>
-								<li>
-									<a href="">Sports</a>
-								</li>
-							</ul>
+						<ul>
+							<li>
+								Fiction & Literature
+							</li>
+								<ul class="categoryList">
+									<li>
+										<a href="">Children</a>
+									</li>
+									<li>
+										<a href="">Science Fiction</a>
+									</li>
+									<li>
+										<a href="">Fantasy</a>
+									</li>
+									<li>
+										<a href="">Mistery</a>
+									</li>
+									<li>
+										<a href="">Romance</a>
+									</li>
+									<li>
+										<a href="">Horror</a>
+									</li>
+									<li>
+										<a href="">Poetry</a>
+									</li>
+									<li>
+										<a href="">Literature</a>
+									</li>
+									<li>
+										<a href="">Crime </a>
+									</li>	
+								</ul>
+							<li>
+								Non-Fiction
+							</li>
+								<ul class="categoryList">
+									<li>
+										<a href="">Comic</a>
+									</li>
+									<li>
+										<a href="">Cook</a>
+									</li>
+									<li>
+										<a href="">Psychology</a>
+									</li>
+									<li>
+										<a href="">Medical</a>
+									</li>
+									<li>
+										<a href="">Art</a>
+									</li>
+									<li>
+										<a href="">Photography</a>
+									</li>
+									<li>
+										<a href="">Law</a>
+									</li>
+									<li>
+										<a href="">History</a>
+									</li>
+									<li>
+										<a href="">Business</a>
+									</li>
+									<li>
+										<a href="">Computer</a>
+									</li>
+									<li>
+										<a href="">Comic</a>
+									</li>
+									<li>
+										<a href="">Cook</a>
+									</li>
+									<li>
+										<a href="">Psychology</a>
+									</li>
+									<li>
+										<a href="">Medical</a>
+									</li>
+								</ul>
+							<li>
+								Other
+							</li>
+								<ul class="categoryList">
+									<li>
+										<a href="">Baby</a>
+									</li>
+									<li>
+										<a href="">Sex</a>
+									</li>
+									<li>
+										<a href="">Travel</a>
+									</li>
+									<li>
+										<a href="">Science</a>
+									</li>
+									<li>
+										<a href="">Sports</a>
+									</li>
+								</ul>
+						</ul>
 					</ul>
-				</ul>
+				</div>
+				
 			</div>
 			<div class="rightSide">
-				<button>Best sellers</button>
-				<button>New Arrivals</button>
-				<button>Used books</button>
-				<button>Special offers</button>
+				<input type="radio" name="odin" checked="checked" id="vkl1"/><label for="vkl1">Best sellers</label>
+  
+ 				<input type="radio" name="odin" id="vkl2"/><label for="vkl2">New arrivals</label>
+  
+				<input type="radio" name="odin" id="vkl3"/><label for="vkl3">Special offers</label>
 
-				<div class="flexContainerBooks">
-					<div class="flexItemsBooks">
-						<p><img src="img/books/1.png" alt=""></p>
-						<p>The hare with amber eyes</p>
-						<p>$ 50</p>
+				<div class="gridContainerBooks">
+					<div class="gridItemsBooks">
+						<div class="items">
+							<a href=""><img src="img/books/1.png" alt=""></a>
+							<p>The hare with amber eyes</p>
+							<p class="price">$ 50</p>
+							<button class="add-to-cart">
+									Buy
+								</button>
+							<button class="addLike"></button>
+						</div>
+						
 					</div>
-					<div class="flexItemsBooks">
-						<p><img src="img/books/2.png" alt=""></p>
-						<p>T</p>
-						<p>$ 60</p>
+					<div class="gridItemsBooks">
+						<div class="items">
+							<a href=""><img src="img/books/2.png" alt=""></a>
+							<p>The war of art</p>
+							<p class="price">$ 60</p>
+							<button class="add-to-cart">
+									Buy
+								</button>
+								<button class="addLike"></button>
+						</div>
 					</div>
-					<div class="flexItemsBooks">
-						<p><img src="img/books/3.png" alt=""></p>
-						<p>T</p>
-						<p>$ 25</p>
+					<div class="gridItemsBooks">
+						<div class="items">
+							<a href=""><img src="img/books/3.png" alt=""></a>
+							<p>Can love happen twice</p>
+							<p class="price">$ 25</p>
+							<button class="add-to-cart">
+									Buy
+								</button>
+								<button class="addLike"></button>
+						</div>
 					</div>
-					<div class="flexItemsBooks">
-						<p><img src="img/books/4.png" alt=""></p>
-						<p>T</p>
-						<p>$ 80</p>
+					<div class="gridItemsBooks">
+						<div class="items">
+							<a href=""><img src="img/books/4.png" alt=""></a>
+							<p>The hare with amber eyes</p>
+							<p class="price">$ 80</p>
+							<button class="add-to-cart">
+									Buy
+								</button>
+								<button class="addLike"></button>
+						</div>
 					</div>
-					<div class="flexItemsBooks">
-						<p><img src="img/books/5.png" alt=""></p>
-						<p>T</p>
-						<p>$ 200</p>
+					<div class="gridItemsBooks">
+						<div class="items">
+							<a href=""><img src="img/books/5.png" alt=""></a>
+							<p>The hare with amber eyes</p>
+							<p class="price">$ 200</p>
+							<button class="add-to-cart">
+									Buy
+								</button>
+								<button class="addLike"></button>
+						</div>
 					</div>
-					<div class="flexItemsBooks">
-						<p><img src="img/books/6.png" alt=""></p>
-						<p>T</p>
-						<p>$ 200</p>
+					<div class="gridItemsBooks">
+						<div class="items">
+							<a href=""><img src="img/books/6.png" alt=""></a>
+							<p>The hare with amber eyes</p>
+							<p class="price">$ 200</p>
+							<button class="add-to-cart">
+									Buy
+								</button>
+								<button class="addLike"></button>
+						</div>
 					</div>
-					<div class="flexItemsBooks">
-						<p><img src="img/books/7.png" alt=""></p>
-						<p>T</p>
-						<p>$ 150</p>
+					<div class="gridItemsBooks">
+						<div class="items">
+							<a href=""><img src="img/books/7.png" alt=""></a>
+							<p>The hare with amber eyes</p>
+							<p class="price">$ 150</p>
+							<button class="add-to-cart">
+									Buy
+								</button>
+								<button class="addLike"></button>
+						</div>
 					</div>
-					<div class="flexItemsBooks">
-						<p><img src="img/books/8.png" alt=""></p>
-						<p>T</p>
-						<p>$ 100</p>
+					<div class="gridItemsBooks">
+						<div class="items">
+							<a href=""><img src="img/books/8.png" alt=""></a>
+							<p>The hare with amber eyes</p>
+							<p class="price">$ 100</p>
+							<button class="add-to-cart">
+									Buy
+								</button>
+								<button class="addLike"></button>
+						</div>
 					</div>
-					<div class="flexItemsBooks">
-						<p><img src="img/books/9.png" alt=""></p>
-						<p>T</p>
-						<p>$ 152</p>
+					<div class="gridItemsBooks">
+						<div class="items">
+							<a href=""><img src="img/books/9.png" alt=""></a>
+							<p>The hare with amber eyes</p>
+							<p class="price">$ 152</p>
+							<button class="add-to-cart">
+									Buy
+								</button>
+								<button class="addLike"></button>
+						</div>
 					</div>
-					<div class="flexItemsBooks">
-						<p><img src="img/books/10.png" alt=""></p>
-						<p>T</p>
-						<p>$ 200</p>
+					<div class="gridItemsBooks">
+						<div class="items">
+							<a href=""><img src="img/books/10.png" alt=""></a>
+							<p>The hare with amber eyes</p>
+							<p class="price">$ 200</p>
+							<button class="add-to-cart">
+									Buy
+								</button>
+								<button class="addLike"></button>
+						</div>
 					</div>
-					<div class="flexItemsBooks">
-						<p><img src="img/books/11.png" alt=""></p>
-						<p>T</p>
-						<p>$ 220</p>
+					<div class="gridItemsBooks">
+						<div class="items">
+							<a href=""><img src="img/books/11.png" alt=""></a>
+							<p>The hare with amber eyes</p>
+							<p class="price">$ 220</p>
+							<button class="add-to-cart">
+									Buy
+								</button>
+								<button class="addLike"></button>
+						</div>
 					</div>
-					<div class="flexItemsBooks">
-						<p><img src="img/books/12.png" alt=""></p>
-						<p>T</p>
-						<p>$ 10</p>
+					<div class="gridItemsBooks">
+						<div class="items">
+							<a href=""><img src="img/books/12.png" alt=""></a>
+							<p>The hare with amber eyes</p>
+							<p class="price">$ 10</p>
+							<button class="add-to-cart">
+									Buy
+								</button>
+								<button class="addLike"></button>
+						</div>
 					</div>
-					<div class="flexItemsBooks">
-						<p><img src="img/books/13.png" alt=""></p>
-						<p>T</p>
-						<p>$ 22</p>
+					<div class="gridItemsBooks">
+						<div class="items">
+							<a href=""><img src="img/books/13.png" alt=""></a>
+							<p>The hare with amber eyes</p>
+							<p class="price">$ 22</p>
+							<button class="add-to-cart">
+									Buy
+								</button>
+								<button class="addLike"></button>
+						</div>
 					</div>
-					<div class="flexItemsBooks">
-						<p><img src="img/books/14.png" alt=""></p>
-						<p>T</p>
-						<p>$ 300</p>
+					<div class="gridItemsBooks">
+						<div class="items">
+							<a href=""><img src="img/books/14.png" alt=""></a>
+							<p>The hare with amber eyes</p>
+							<p class="price">$ 300</p>
+							<button class="add-to-cart">
+									Buy
+								</button>
+								<button class="addLike"></button>
+						</div>
 					</div>
-					<div class="flexItemsBooks">
-						<p><img src="img/books/15.png" alt=""></p>
-						<p>T</p>
-						<p>$ 205</p>
+					<div class="gridItemsBooks">
+						<div class="items">
+							<a href=""><img src="img/books/15.png" alt=""></a>
+							<p>The hare with amber eyes</p>
+							<p class="price">$ 205</p>
+							<button class="add-to-cart">
+									Buy
+								</button>
+								<button class="addLike"></button>
+						</div>
+					</div>
+					<div class="gridItemsBooks">
+						<div class="items">
+							<a href=""><img src="img/books/15.png" alt=""></a>
+							<p>The hare with amber eyes</p>
+							<p class="price">$ 205</p>
+							<button class="add-to-cart">
+									Buy
+								</button>
+								<button class="addLike"></button>
+						</div>
+					</div>
+					<div class="gridItemsBooks">
+						<div class="items">
+							<a href=""><img src="img/books/15.png" alt=""></a>
+							<p>The hare with amber eyes</p>
+							<p class="price">$ 205</p>
+							<button class="add-to-cart">
+									Buy
+								</button>
+								<button class="addLike"></button>
+						</div>
+					</div>
+					<div class="gridItemsBooks">
+						<div class="items">
+							<a href=""><img src="img/books/15.png" alt=""></a>
+							<p>The hare with amber eyes</p>
+							<p class="price">$ 205</p>
+							<button class="add-to-cart">
+									Buy
+								</button>
+								<button class="addLike"></button>
+						</div>
+					</div>
+					<div class="gridItemsBooks">
+						<div class="items">
+							<a href=""><img src="img/books/15.png" alt=""></a>
+							<p>The hare with amber eyes</p>
+							<p class="price">$ 205</p>
+							<button class="add-to-cart">
+									Buy
+								</button>
+								<button class="addLike"></button>
+						</div>
+					</div>
+				</div>
+				<div class="gridContainerBooks">
+					
+					<div class="gridItemsBooks">
+						<div class="items">
+							<a href=""><img src="img/books/2.png" alt=""></a>
+							<p>The war of art</p>
+							<p class="price">$ 60</p>
+							<button class="add-to-cart">
+									Buy
+								</button>
+								<button class="addLike"></button>
+						</div>
 					</div>
 					
+					<div class="gridItemsBooks">
+						<div class="items">
+							<a href=""><img src="img/books/4.png" alt=""></a>
+							<p>The hare with amber eyes</p>
+							<p class="price">$ 80</p>
+							<button class="add-to-cart">
+									Buy
+								</button>
+								<button class="addLike"></button>
+						</div>
+					</div>
+					<div class="gridItemsBooks">
+						<div class="items">
+							<a href=""><img src="img/books/5.png" alt=""></a>
+							<p>The hare with amber eyes</p>
+							<p class="price">$ 200</p>
+							<button class="add-to-cart">
+									Buy
+								</button>
+								<button class="addLike"></button>
+						</div>
+					</div>
+					
+					<div class="gridItemsBooks">
+						<div class="items">
+							<a href=""><img src="img/books/7.png" alt=""></a>
+							<p>The hare with amber eyes</p>
+							<p class="price">$ 150</p>
+							<button class="add-to-cart">
+									Buy
+								</button>
+								<button class="addLike"></button>
+						</div>
+					</div>
+					<div class="gridItemsBooks">
+						<div class="items">
+							<a href=""><img src="img/books/8.png" alt=""></a>
+							<p>The hare with amber eyes</p>
+							<p class="price">$ 100</p>
+							<button class="add-to-cart">
+									Buy
+								</button>
+								<button class="addLike"></button>
+						</div>
+					</div>
+					
+					<div class="gridItemsBooks">
+						<div class="items">
+							<a href=""><img src="img/books/10.png" alt=""></a>
+							<p>The hare with amber eyes</p>
+							<p class="price">$ 200</p>
+							<button class="add-to-cart">
+									Buy
+								</button>
+								<button class="addLike"></button>
+						</div>
+					</div>
+					<div class="gridItemsBooks">
+						<div class="items">
+							<a href=""><img src="img/books/11.png" alt=""></a>
+							<p>The hare with amber eyes</p>
+							<p class="price">$ 220</p>
+							<button class="add-to-cart">
+									Buy
+								</button>
+								<button class="addLike"></button>
+						</div>
+					</div>
+					
+					<div class="gridItemsBooks">
+						<div class="items">
+							<a href=""><img src="img/books/13.png" alt=""></a>
+							<p>The hare with amber eyes</p>
+							<p class="price">$ 22</p>
+							<button class="add-to-cart">
+									Buy
+								</button>
+								<button class="addLike"></button>
+						</div>
+					</div>
+					<div class="gridItemsBooks">
+						<div class="items">
+							<a href=""><img src="img/books/14.png" alt=""></a>
+							<p>The hare with amber eyes</p>
+							<p class="price">$ 300</p>
+							<button class="add-to-cart">
+									Buy
+								</button>
+								<button class="addLike"></button>
+						</div>
+					</div>
+					
+					<div class="gridItemsBooks">
+						<div class="items">
+							<a href=""><img src="img/books/15.png" alt=""></a>
+							<p>The hare with amber eyes</p>
+							<p class="price">$ 205</p>
+							<button class="add-to-cart">
+									Buy
+								</button>
+								<button class="addLike"></button>
+						</div>
+					</div>		
+				</div>
+				<div class="gridContainerBooks">
+
+					<div class="gridItemsBooks">
+						<div class="items">
+							<a href=""><img src="img/books/3.png" alt=""></a>
+							<p>Can love happen twice</p>
+							<p class="price">$ 25</p>
+							<button class="add-to-cart">
+									Buy
+								</button>
+								<button class="addLike"></button>
+						</div>
+					</div>
+					<div class="gridItemsBooks">
+						<div class="items">
+							<a href=""><img src="img/books/4.png" alt=""></a>
+							<p>The hare with amber eyes</p>
+							<p class="price">$ 80</p>
+							<button class="add-to-cart">
+									Buy
+								</button>
+								<button class="addLike"></button>
+						</div>
+					</div>
+					<div class="gridItemsBooks">
+						<div class="items">
+							<a href=""><img src="img/books/5.png" alt=""></a>
+							<p>The hare with amber eyes</p>
+							<p class="price">$ 200</p>
+							<button class="add-to-cart">
+									Buy
+								</button>
+								<button class="addLike"></button>
+						</div>
+					</div>
+					<div class="gridItemsBooks">
+						<div class="items">
+							<a href=""><img src="img/books/6.png" alt=""></a>
+							<p>The hare with amber eyes</p>
+							<p class="price">$ 200</p>
+							<button class="add-to-cart">
+									Buy
+								</button>
+								<button class="addLike"></button>
+						</div>
+					</div>
+					<div class="gridItemsBooks">
+						<div class="items">
+							<a href=""><img src="img/books/7.png" alt=""></a>
+							<p>The hare with amber eyes</p>
+							<p class="price">$ 150</p>
+							<button class="add-to-cart">
+									Buy
+								</button>
+								<button class="addLike"></button>
+						</div>
+					</div>
+					<div class="gridItemsBooks">
+						<div class="items">
+							<a href=""><img src="img/books/8.png" alt=""></a>
+							<p>The hare with amber eyes</p>
+							<p class="price">$ 100</p>
+							<button class="add-to-cart">
+									Buy
+								</button>
+								<button class="addLike"></button>
+						</div>
+					</div>
+					<div class="gridItemsBooks">
+						<div class="items">
+							<a href=""><img src="img/books/9.png" alt=""></a>
+							<p>The hare with amber eyes</p>
+							<p class="price">$ 152</p>
+							<button class="add-to-cart">
+									Buy
+								</button>
+								<button class="addLike"></button>
+						</div>
+					</div>
+					
+					<div class="gridItemsBooks">
+						<div class="items">
+							<a href=""><img src="img/books/11.png" alt=""></a>
+							<p>The hare with amber eyes</p>
+							<p class="price">$ 220</p>
+							<button class="add-to-cart">
+									Buy
+								</button>
+								<button class="addLike"></button>
+						</div>
+					</div>
+					
+					<div class="gridItemsBooks">
+						<div class="items">
+							<a href=""><img src="img/books/13.png" alt=""></a>
+							<p>The hare with amber eyes</p>
+							<p class="price">$ 22</p>
+							<button class="add-to-cart">
+									Buy
+								</button>
+								<button class="addLike"></button>
+						</div>
+					</div>
+					<div class="gridItemsBooks">
+						<div class="items">
+							<a href=""><img src="img/books/14.png" alt=""></a>
+							<p>The hare with amber eyes</p>
+							<p class="price">$ 300</p>
+							<button class="add-to-cart">
+									Buy
+								</button>
+								<button class="addLike"></button>
+						</div>
+					</div>
+					
+					
+					<div class="gridItemsBooks">
+						<div class="items">
+							<a href=""><img src="img/books/15.png" alt=""></a>
+							<p>The hare with amber eyes</p>
+							<p class="price">$ 205</p>
+							<button class="add-to-cart">
+									Buy
+								</button>
+								<button class="addLike"></button>
+						</div>
+					</div>
 				</div>
 			</div>
 		</div>
@@ -392,6 +807,12 @@
 		</div>
 
 	</footer>
+
+	<script type="text/javascript" src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
+	<script type="text/javascript" src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+	<script type="text/javascript" src="slick-1.8.1/slick/slick.min.js"></script>
+
+	<script src="app.js"></script>
 	
 </body>
 </html>
